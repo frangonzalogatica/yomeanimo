@@ -1,0 +1,183 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    width: 100%;
+
+    background-color: white;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    height: 50px;
+    line-height: 38px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    overflow: visible;
+}
+
+button {
+    padding: 11px 25px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: #EA2250;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #b11438;
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+p {
+    color: red;
+    text-align: left;
+    margin: 0;
+}
+
+.success-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.success-message.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#app{
+    width: 100%;
+}
+
+#app .main-header{
+    background:url('https://www.yomeanimo.com/wp-content/uploads/2022/01/Componente-8-–-5@2x.png') no-repeat center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 15%, 0% 0%, 15% 0%, 85% 0%, 100% 0%, 100% 15%, 100% 90%, 100% 94%, 53% 100%, 53% 94%, 0% 100%, 0% 85%);
+    clip-path: polygon(0% 15%, 0% 0%, 15% 0%, 85% 0%, 100% 0%, 100% 15%, 100% 90%, 100% 94%, 53% 100%, 53% 94%, 0% 100%, 0% 85%);
+    padding: 115px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#app .main-header h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+#app #subscription-form{
+    background-color: #00dbd0;
+    padding: 110px 0px 100px;
+    margin-top: -25px;
+    clip-path: polygon(0 0, 0 100%, 100% 89%, 100% 0);
+    z-index: 0;
+    position: relative;
+}
+
+#app #subscription-form .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#app #subscription-form h2{
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+#app #subscription-form form .input-container{
+    display: flex;
+    column-gap: 25px;
+}
+
+#app #subscription-form img{
+    position: absolute;
+    max-width: 50%;
+    bottom: -35%;
+    z-index: -1;
+}
+
+
+@media(max-width:767px){
+    #app #subscription-form{
+        padding: 110px 25px 100px;
+    }
+
+    #app #subscription-form form .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    #app #subscription-form img{
+        bottom: 0;
+        left: 0;
+        max-width: 75%;
+    }
+}
